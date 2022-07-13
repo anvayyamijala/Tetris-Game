@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #202028;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #sc {
+            margin: 0 0;
+        }
+
+        #score-block {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            margin: 0 0 0 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #key {
+            display: block;
+            font-size: 8px;
+        }
+
+        canvas {
+            border: solid .1em rgba(255, 255, 255, 0.301);
+            height: 90vh;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="score-block">
+        <p id="sc">Score:</p>
+        <div id="score"></div>
+    </div>
+
+    <div id="key">
+        <p>To Rotate : Q,W & To Move: Arrow Keys</p>
+    </div>
+    <canvas id="tetris" width="240" height="400"></canvas>
+    <script src="tetris.js"></script>
+</body>
+
+</html>
