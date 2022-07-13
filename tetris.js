@@ -17,7 +17,7 @@ function arenaSweep() {
         arena.unshift(row);
         ++y;
 
-        player.score = rowCount * 10;
+        player.score += rowCount * 10;
         rowCount *= 2;
     }
 }
