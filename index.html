@@ -14,7 +14,7 @@
             background: #202028;
             color: #fff;
             font-family: 'Press Start 2P', cursive;
-            font-size: 1em;
+            font-size: 22px;
             text-align: center;
         }
 
@@ -23,6 +23,7 @@
         }
 
         #score-block {
+            color: rgb(93, 163, 255);
             display: flex;
             flex-flow: row wrap;
             padding: 0;
@@ -33,7 +34,7 @@
 
         #key {
             display: block;
-            font-size: 8px;
+            font-size: 9px;
         }
 
         canvas {
@@ -51,7 +52,7 @@
     </div>
 
     <div id="key">
-        <p>To Rotate : Q,W & To Move: Arrow Keys</p>
+        <p> (To Rotate : <i>Q,W</i> ) && (To Move: <i>Arrow Keys)</i></p>
     </div>
     <canvas id="tetris" width="240" height="400"></canvas>
     <script src="tetris.js"></script>
